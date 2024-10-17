@@ -45,7 +45,7 @@ st.markdown(
     <style>
     .bar-image {
         width: 400px;
-        height: 150px;
+        height: 200px;
     }
     </style>
     <img src="https://img.freepik.com/free-vector/hand-drawn-device-antigravity-background_23-2148063881.jpg?size=626&ext=jpg" 
