@@ -45,7 +45,7 @@ st.title("IT Product Identifier")
 #     caption="IT gadjet overview",
 #     width=400, height= 150)
 
-st.image(
+st.markdown(
     """
     <style>
     .bar-image {
