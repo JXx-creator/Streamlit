@@ -57,7 +57,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://img.freepik.com/free-vector/hand-drawn-device-antigravity-background_23-2148063881.jpg?size=626&ext=jpg");
+        background-image: url("https://www.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_7540008.htm#fromView=search&page=1&position=8&uuid=4c117803-84a2-435d-82bf-62f1056a2eb9");
         background-size: cover;
         background-position: center;
     }
