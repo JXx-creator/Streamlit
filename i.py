@@ -9,7 +9,7 @@ from PIL import Image as PILImage
 #openai_client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])  # Replace with your actual key
 
 # Initialize Google Generative AI client
-genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])  # Replace with your actual key
+genai.configure(api_key=st.secrets['GEMINI_API_KEY'])  # Replace with your actual key
 
 # Example of initializing a generative model with Google Generative AI for IT product search
 it_product_model = genai.GenerativeModel(
