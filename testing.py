@@ -57,9 +57,11 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://www.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_7540008.htm#fromView=search&page=1&position=8&uuid=4c117803-84a2-435d-82bf-62f1056a2eb9");
-        background-size: cover;
-        background-position: center;
+        background-image: url("https://img.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_155003-3944.jpg?ga=GA1.1.155002789.1729192331&semt=ais_hybrid");
+        background-size: cover;  /* Ensures the image covers the whole background */
+        background-repeat: no-repeat;  /* Prevents the image from repeating */
+        background-attachment: fixed;  /* Makes the background stay fixed when scrolling */
+        background-position: center;  /* Centers the background image */
     }
     </style>
     """,
