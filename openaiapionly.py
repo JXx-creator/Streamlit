@@ -26,6 +26,7 @@ if product_image is not None:
     img = PILImage.open(product_image)
     img.thumbnail((800, 800))  # Resize the image to max 800x800 pixels
     st.image(img, caption="Uploaded IT Product Image", use_column_width=True)
+    st.image(product_image)
 
     # Analyze the image for IT product identification
     if st.button("Analyze Product"):
