@@ -37,8 +37,27 @@ def it_product_analysis(image):
 
     return response.text.strip()
 
+
+
+
+
+
+
+
+
+
+
 # Streamlit layout for uploading and displaying the image
 st.title("IT Product Identifier")
+
+
+
+
+
+
+
+
+
 
 # Upload an image
 product_image = st.file_uploader("Upload a picture of an IT product", type=["jpg", "jpeg", "png"])
