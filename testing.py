@@ -40,10 +40,23 @@ def it_product_analysis(image):
 # Streamlit layout for uploading and displaying the image
 st.title("IT Product Identifier")
 
+# st.image(
+#     "https://img.freepik.com/free-vector/hand-drawn-device-antigravity-background_23-2148063881.jpg?size=626&ext=jpg",
+#     caption="IT gadjet overview",
+#     width=400, height= 150)
+
 st.image(
-    "https://img.freepik.com/free-vector/hand-drawn-device-antigravity-background_23-2148063881.jpg?size=626&ext=jpg",
-    caption="IT gadjet overview",
-    width=400)
+    """
+    <style>
+    .bar-image {
+        width: 400px;
+        height: 150px;
+    }
+    </style>
+    <img src="https://img.freepik.com/free-vector/hand-drawn-device-antigravity-background_23-2148063881.jpg?size=626&ext=jpg" 
+         class="bar-image" alt="IT gadget overview">
+    """, unsafe_allow_html=True
+)
 
 # Upload an image
 product_image = st.file_uploader("Upload a picture of an IT product",
