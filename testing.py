@@ -1,23 +1,15 @@
-import google.generativeai as genai
-from google.colab import userdata
-import PIL.Image
-#gemini API cannot connect to Internet, use an library to access the image
+import streamlit as st
+from PIL import Image as PILImage
 
-#set the API KEY
-genai.configure(api_key = userdata.get('GEMINI_API_KEY'))
+st.title("Simple Image Uploader")
 
-#Text model
-model = genai.GenerativeModel('gemini-1.5-flash')
-response = model.generate_content('Who are Donald Trump?')
+# Upload an image
+product_image = st.file_uploader("Upload a picture", type=["jpg", "jpeg", "png"])
 
-#model = genai.GenerativeModel("gemini-1.5-flash")
-#response = model.generate_content("Write a story about a magic backpack.")
-print(response)
-print(response.text)
-
-image=PIL.Image.open('/content/mouse2.jpg')
-
-model = genai.GenerativeModel('gemini-1.5-flash')
-response = model.generate_content(['Identify and describe the product in the images uploaded.'
-  'Would be better to know the specfic brand and model.', image])
-print(response.text) 
+if product_image is not None:
+    # Open and display the uploaded image
+    img = PILImage.open(product_image)
+    img.thumbnail((800, 800))  # Resize the image to max 800x800 pixels
+    st.image(img, caption="Uploaded Image", use_column_width=True)
+else:
+    st.write("Please upload a picture.")
