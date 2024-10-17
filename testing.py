@@ -75,7 +75,7 @@ product_image = st.file_uploader("Upload a picture of an IT product",
 if product_image is not None:
     # Open and display the uploaded image
     img = PILImage.open(product_image)
-    img.thumbnail((800, 800))  # Resize the image to max 800x800 pixels
+    img.thumbnail((400, 400))  # Resize the image to max 800x800 pixels
     st.image(img, caption="Uploaded IT Product Image", use_column_width=True)
 
     # Analyze the image for IT product identification
